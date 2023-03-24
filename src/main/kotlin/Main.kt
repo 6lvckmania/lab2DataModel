@@ -3,8 +3,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 fun main(args: Array<String>) {
     val context = AnnotationConfigApplicationContext(EntityList::class.java)
 
-    val module1 = SoftwareModule("Module 1", "Me", "C", "2022-02-02", 212, 3123,true)
-    val module2 = SoftwareModule("Module 2", "Not me", "C++", "2022-03-01", 1231, 123123123,false)
+    val module1 = SoftwareModule("Module 1", "Me", "C", "2022-02-02", 212, 3123, true)
+    val module2 = SoftwareModule("Module 2", "Not me", "C++", "2022-03-01", 1231, 123123123, false)
 
     val product1 = SoftwareProduct("Product 1", "Developer 1", "1.0", "2022-01-01", 100, "64-bit", true, listOf(module1))
     val product2 = SoftwareProduct("Product 2", "Developer 2", "2.0", "2022-02-01", 200, "32-bit", false, listOf())
